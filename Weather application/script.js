@@ -28,3 +28,10 @@ btn.addEventListener('click', function() {
         })
         .catch(err => alert('You Entered Wrong City name'));
 });
+if (data.weather[0].main.toLowerCase().includes("rain") ||
+    data.weather[0].description.toLowerCase().includes("rain")) {
+    document.querySelector('.rain').style.display = 'block';
+} else {
+    document.querySelector('.rain').style.display = 'none';
+}
+
