@@ -1,41 +1,52 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Application</title>
-    <link rel="stylesheet" href="weather application/design.css">
+    <title>Weather Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assets/cloudy.png">
 </head>
 <body>
 
-    <h1>Weather Application</h1>
+    <h1>Weather Web App</h1>
 
-    <!-- Date & Time Section Added -->
-    <div class="datetime">
-        <p id="date"></p>
-        <p id="time"></p>
+    <!-- Date & Time -->
+    <div class="clock-container">
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
     </div>
 
     <div class="container">
-        <section class="main">
-            <section class="inputs">
-                <input type="text" placeholder="Enter your city Name" id="cityinput">
-                <input type="submit" value="submit" id="add">
-            </section>
-        </section>
+        <div class="inputs">
+            <input type="text" id="cityinput" placeholder="Enter City Name">
+            <input type="submit" value="Submit" id="add">
+        </div>
+        <!-- From Uiverse.io by alexruix --> 
 
-        <section class="display"> 
-            <div class="wrapper">
-                <h2 id="cityoutput"></h2>
-                <p id="description"></p>
-                <p id="temp"></p>
-                <p id="wind"></p>
-            </div>
-        </section>
+  <div class="loader">
+    <span class="loader-text">loading</span>
+      <span class="load"></span>
+  </div>
+
+
+        <div class="wrapper">
+            <h2 id="cityoutput"></h2>
+
+            <!-- Weather Icon -->
+            <img id="icon">
+
+            <p id="description"></p>
+            <p id="temp"></p>
+            <p id="feelslike"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
     </div>
+    <div class="forecast-container">
+    <h3>5-Day Forecast</h3>
+    <div id="forecast"></div>
+</div>
 
-    <div class="rain"></div>
-
-    <script src="weather application/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
