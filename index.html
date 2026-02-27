@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="Weather application/design.css">
@@ -26,6 +26,60 @@
         </section>
     </div>
     <div class="rain"></div>
+
+    <script src="Weather application/script.js"></script>
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Web App</title>
+    <link rel="stylesheet" href="Weather application/design.css">
+    <link rel="icon" type="image/png" href="Assets/cloudy.png">
+</head>
+<body>
+
+    <h1>Weather Web App</h1>
+
+    <!-- Date & Time -->
+    <div class="clock-container">
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <div class="container">
+        <div class="inputs">
+            <input type="text" id="cityinput" placeholder="Enter City Name">
+            <input type="submit" value="Submit" id="add">
+        </div>
+        <!-- From Uiverse.io by alexruix --> 
+
+  <div class="loader">
+    <span class="loader-text">loading</span>
+      <span class="load"></span>
+  </div>
+
+
+        <div class="wrapper">
+       
+            <h2 id="cityoutput"></h2>
+
+            <!-- Weather Icon -->
+            <img id="icon">
+
+            <p id="description"></p>
+            <p id="temp"></p>
+            <p id="feelslike"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+    </div>
+    <div class="forecast-container">
+    <h3>5-Day Forecast</h3>
+    <div id="forecast"></div>
+</div>
 
     <script src="Weather application/script.js"></script>
 </body>
